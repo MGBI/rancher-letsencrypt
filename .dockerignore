@@ -1,0 +1,8 @@
+.dockerignore
+**/.git*
+
+circle.yml
+Dockerfile*
+hero.png
+README.md
+VERSION
