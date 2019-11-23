@@ -7,7 +7,7 @@
 PROJECT := rancher-letsencrypt
 PLATFORMS := linux
 ARCH := amd64
-DOCKER_REPOSITORY := pile.mdk.zone/mdkbackend/letencrypt
+DOCKER_REPOSITORY := mgbi
 DOCKER_IMAGE := $(DOCKER_REPOSITORY)/$(PROJECT)
 
 VERSION := $(shell cat VERSION)
@@ -59,6 +59,9 @@ dockerhub: image
 
 image:
 	docker build -t $(DOCKER_IMAGE):dev-$(SHA) -f Dockerfile.dev .
+
+prod-image:
+	docker build -t $(DOCKER_IMAGE):$(VERSION) .
 
 version:
 	@echo $(VERSION) $(SHA)

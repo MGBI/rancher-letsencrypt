@@ -1,15 +1,13 @@
-![Rancher + Let's Encrypt = Awesome Sauce](https://raw.githubusercontent.com/vxcontrol/rancher-letsencrypt/master/hero.png)
+![Rancher + Let's Encrypt = Awesome Sauce](https://raw.githubusercontent.com/mgbi/rancher-letsencrypt/master/hero.png)
 
 # Let's Encrypt Certificate Manager for Rancher
 
-[![Latest Version](https://img.shields.io/github/release/vxcontrol/rancher-letsencrypt.svg?maxAge=8600)][release]
-[![Circle CI](https://circleci.com/gh/vxcontrol/rancher-letsencrypt.svg?style=shield&circle-token=cd06c9a78ae3ef7b6c1387067c36360f62d97b7a)][circleci]
-[![Docker Pulls](https://img.shields.io/docker/pulls/vxcontrol/rancher-letsencrypt.svg?maxAge=8600)][hub]
-[![License](https://img.shields.io/github/license/vxcontrol/rancher-letsencrypt.svg?maxAge=8600)]()
+[![Latest Version](https://img.shields.io/github/release/mgbi/rancher-letsencrypt.svg?maxAge=8600)][release]
+[![Docker Pulls](https://img.shields.io/docker/pulls/mgbi/rancher-letsencrypt.svg?maxAge=8600)][hub]
+[![License](https://img.shields.io/github/license/mgbi/rancher-letsencrypt.svg?maxAge=8600)]()
 
-[release]: https://github.com/vxcontrol/rancher-letsencrypt/releases
-[circleci]: https://circleci.com/gh/vxcontrol/rancher-letsencrypt
-[hub]: https://hub.docker.com/r/vxcontrol/rancher-letsencrypt/
+[release]: https://github.com/mgbi/rancher-letsencrypt/releases
+[hub]: https://hub.docker.com/r/mgbi/rancher-letsencrypt/
 
 **This repository is a maintained fork from unmaintained work done by [janeczku](https://github.com/janeczku)**
 
@@ -176,6 +174,10 @@ make docker-build
 ```
 make image
 ```
+
+There is alse a configured autobuild on Dockerhub for this repo:
+
+https://hub.docker.com/repository/docker/mgbi/rancher-letsencrypt
 
 ### Contributions
 
