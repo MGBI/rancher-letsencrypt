@@ -115,6 +115,7 @@ func (c *Context) InitContext() {
 		CloudflareEmail:      getEnvOption("CLOUDFLARE_EMAIL", false),
 		CloudflareKey:        getEnvOption("CLOUDFLARE_KEY", false),
 		DoAccessToken:        getEnvOption("DO_ACCESS_TOKEN", false),
+		GoogleCloudProject:   getEnvOption("GCE_PROJECT", false),
 		AwsAccessKey:         getEnvOption("AWS_ACCESS_KEY", false),
 		AwsSecretKey:         getEnvOption("AWS_SECRET_KEY", false),
 		DNSimpleEmail:        getEnvOption("DNSIMPLE_EMAIL", false),
