@@ -16,7 +16,7 @@ const (
 	CERT_DESCRIPTION    = "Created by Let's Encrypt Certificate Manager"
 	ISSUER_PRODUCTION   = "Let's Encrypt"
 	ISSUER_STAGING      = "fake CA"
-	RENEWAL_PERIOD_DAYS = 20
+	RENEWAL_PERIOD_DAYS = 21
 	RANCHER_SECRETS_DIR = "/run/secrets/"
 )
 
