@@ -16,7 +16,7 @@ const (
 	CERT_DESCRIPTION    = "Created by Let's Encrypt Certificate Manager"
 	ISSUER_PRODUCTION   = "Let's Encrypt"
 	ISSUER_STAGING      = "fake CA"
-	RENEWAL_PERIOD_DAYS = 20
+	RENEWAL_PERIOD_DAYS = 21
 	RANCHER_SECRETS_DIR = "/run/secrets/"
 )
 
@@ -115,6 +115,7 @@ func (c *Context) InitContext() {
 		CloudflareEmail:      getEnvOption("CLOUDFLARE_EMAIL", false),
 		CloudflareKey:        getEnvOption("CLOUDFLARE_KEY", false),
 		DoAccessToken:        getEnvOption("DO_ACCESS_TOKEN", false),
+		GoogleCloudProject:   getEnvOption("GCE_PROJECT", false),
 		AwsAccessKey:         getEnvOption("AWS_ACCESS_KEY", false),
 		AwsSecretKey:         getEnvOption("AWS_SECRET_KEY", false),
 		DNSimpleEmail:        getEnvOption("DNSIMPLE_EMAIL", false),
